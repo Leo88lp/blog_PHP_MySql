@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Helvetica, Arial;
+    text-decoration: none;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+body {
+    background: url('../img/cubes.png') #f4f4f4;
+   /* font-family: 'Fjalla One', sans-serif; */
+}
+
+/*Cabecera*/
+#cabecera{
+    width: 85%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto;
+}
+
+/*LOGOTIPO*/
+#logo{
+    float: left;
+    width: 40%;
+    height: 110px;
+}
+
+#logo a{
+    font-family: 'Fjalla One', Helvetica;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #2979cd;
+    text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+    transition: all 500ms;
+    line-height: 100px;
+    margin-left: 10px;
+}
+
+#logo a:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 0px black, -1px -1px 0px black, -2px -2px 0px black;
+}
+
+/*MENU*/
+
+#menu{
+    clear: both;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100% );
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px #ccc;
+    overflow: hidden;
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu ul li{
+    float: left;
+    line-height: 45px;
+    border-right: 1px solid #d6d6d6;
+    
+}
+
+#menu ul li:hover{
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100% );
+}
+
+#menu ul li a{
+    display: block;
+    padding: 0px 5px 0px 5px;
+    color: #838282
+}
+
+/*PRINCIPAL*/
+#container{
+    width: 85%;
+    height: auto;
+    /* min-height: auto; */
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#principal{
+    float: left;
+    background-color: white;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    width: 65%;
+    min-height: 630px;
+    box-shadow: 0px 0px 5px #ccc;
+    margin-left: 20px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#principal h1{
+    font-size: 34px;
+    color: #444;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #ccc;
+    font-family: 'Fjalla One', Helvetica; ;
+}
+
+#principal h2{
+    font-size: 20px;
+    color: #444;
+    letter-spacing: 1px;
+    font-family: 'Fjalla One', Helvetica;
+    margin-top: 25px;
+    color: #2979cd;
+    text-shadow: 1px 1px 2px #ccc;
+}
+
+#principal p{
+    margin-top: 8px;
+}
+
+#principal a{
+    color: #333;
+}
+
+#vertodas a{
+    display: block;
+    border-radius: 2px;
+    padding: 10px;
+    color: white;
+    background: #007ee5;
+    border: 1px solid #156785;
+    cursor: pointer;
+    width: 160px;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+.fecha {
+    color: rgb(146, 145, 145);
+    font-size: 14px;
+}
+/*BARRA LATERAL*/
+#sidebar{
+    float: right;
+    height: auto;
+    /* min-height: 900px; */
+    width: 27%;
+}
+
+.block-aside{
+    display: block;
+    width: 78%;
+    margin: 0px auto;
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3),
+    0px 0px 1px #ffff inset, 0px -3px 2px rgba(0, 0, 0, 0.25) inset;
+}
+
+.block-aside h3{
+    margin-bottom: 15px;
+}
+
+label,textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+textarea{
+    resize: none;
+}
+input[type="button"],
+input[type="submit"]{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    border-radius: 2px;
+    color: white;
+    background: #007ee5;
+    border: 1px solid #156785;
+    cursor: pointer;
+    width: 23%;
+    padding: 5px;
+}
+
+.error{
+    margin-top: 20px;
+    color: red;
+}
+
+.error li{
+    margin-top: 5px;
+    font-weight: 800;
+}
+
+.errorlogin{
+    margin-top: 10px;
+    color:white;
+    background-color: red;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+/*PIE DE PAGINA*/
+#footer{
+    clear: both;
+    width: 83%;
+    margin: 0px auto;
+    background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100% );
+    border: 1px solid #c9c9c9;
+    border-bottom: none;
+    border-radius: 8px 8px 0px 0px;
+    color: #666;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+/*Login*/
+
+.boton-session{
+    display: block;
+    border-radius: 2px;
+    color: white !important;
+    background: #007ee5;
+    border: 1px solid #156785;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    width: 45%;
+    /* margin: 0 auto; */
+    margin-top: 15px;
+}
+
+.boton-verde{
+    /* color: white; */
+    background-color: #65d90d;
+    border-color: green;
+}
+.boton-verde-editar{
+    background-color: #65d90d;
+    border-color: green;
+    width: 13%;
+}
+.boton-naranja{
+    background-color: orange;
+    border-color: red;
+}
+
+.boton-rojo{
+    background-color: red;
+}
+.boton-rojo-editar{
+    background-color: red;
+    width: 13%;
+}
+
+.ok {
+    background-color: #41e1e1;
+}
+/*FORMULARIO UPDATE USUARIO*/
+.formUserUpdate{
+    width: 25%;
+}
+.formUserUpdate label{
+    color: blue;
+    font-weight: bold;
+}
+
+.formUserUpdate label,input,p{
+    display: inline;
+}
+
+.formUserUpdate input[type="submit"]{
+    margin-top: 20px;
+    width: auto;
+}
+
+.label{
+    margin-top: 10px;
+}
+
+.errorform{
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
